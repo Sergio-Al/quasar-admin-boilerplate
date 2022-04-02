@@ -58,23 +58,6 @@
           </q-item>
 
           <q-item
-            to="/system/users"
-            clickable
-            :active="isMyComponent('usuarios')"
-            @click="selectComponent('usuarios')"
-            active-class="item-active"
-            v-ripple
-            exact
-            v-if="$store.state.authModule.userRole !== 'USER'"
-          >
-            <q-item-section avatar>
-              <q-icon name="assignment" />
-            </q-item-section>
-
-            <q-item-section>Usuarios</q-item-section>
-          </q-item>
-
-          <q-item
             to="/system/authors"
             clickable
             :active="isMyComponent('autores')"
@@ -105,28 +88,9 @@
             <q-item-section>clientes</q-item-section>
           </q-item>
 
-          <q-item
-            to="/system/suppliers"
-            clickable
-            :active="isMyComponent('proveedores')"
-            @click="selectComponent('proveedores')"
-            active-class="item-active"
-            v-ripple
-            exact
-          >
-            <q-item-section avatar>
-              <q-icon name="hail" />
-            </q-item-section>
-
-            <q-item-section>proveedores</q-item-section>
-          </q-item>
-          <q-separator spaced />
-
           <q-item-label header>Opciones</q-item-label>
 
           <q-item
-            to="/system/options"
-            clickable
             :active="isMyComponent('opciones')"
             @click="selectComponent('opciones')"
             active-class="item-active"
@@ -137,42 +101,8 @@
               <q-icon name="account_box" />
             </q-item-section>
 
-            <q-item-section>Perfil</q-item-section>
+            <q-item-section>Usuario</q-item-section>
           </q-item>
-
-          <q-expansion-item expand-separator icon="settings" label="Opciones">
-            <q-card>
-              <q-card-section class="q-ma-none">
-                <div class="column wrap q-pa-none justify-center">
-                  <div class="row">
-                    <q-toggle
-                      v-model="isNightMode"
-                      checked-icon="dark_mode"
-                      size="lg"
-                      :label="isNightMode ? 'Modo Noche: Si' : 'Modo Noche: No'"
-                      unchecked-icon="light_mode"
-                    />
-                  </div>
-
-                  <div class="row items-center q-mt-lg">
-                    <q-icon size="xl" name="person_outline" />
-
-                    <div class="column q-ml-lg">
-                      <div class="text-subtitle1 q-mt-md q-mb-xs">{{ userName }}</div>
-
-                      <q-btn
-                        color="primary"
-                        label="Cerrar Sesión"
-                        push
-                        size="sm"
-                        @click="onLogoutDialog"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </q-card-section>
-            </q-card>
-          </q-expansion-item>
         </q-list>
       </q-scroll-area>
     </q-drawer>

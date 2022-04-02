@@ -4,11 +4,7 @@ import { createStore } from "vuex";
 // import example from './module-example'
 import generalModule from "./general-module";
 import authModule from "./auth-module";
-import usersModule from "./users-module";
 import clientsModule from "./clients-module";
-import contactsModule from "./contacts-module";
-import suppliersModule from "./suppliers-module";
-import supplierContactsModule from "./supplierContacts-module";
 import authorsModule from "./author-module";
 
 /*
@@ -26,11 +22,7 @@ export default store(function (/* { ssrContext } */) {
       // example
       generalModule,
       authModule,
-      usersModule,
       clientsModule,
-      contactsModule,
-      suppliersModule,
-      supplierContactsModule,
       authorsModule,
     },
 
