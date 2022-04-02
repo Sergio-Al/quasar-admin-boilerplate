@@ -2,6 +2,9 @@
 
 A loans management app
 
+# Important!
+- Set up the connection to your backend in `src/boot/axios.js`
+
 ## Install the dependencies
 ```bash
 yarn
