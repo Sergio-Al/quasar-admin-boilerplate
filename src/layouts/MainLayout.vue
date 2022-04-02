@@ -8,7 +8,7 @@
         <q-toolbar-title class="text-weight-medium q-px-md q-pr-lg">Library App</q-toolbar-title>
 
         <div>
-          <img class="img-logo" src="../assets/groupcisc-logo.png" alt />
+          <q-icon name="book" />
         </div>
       </q-toolbar>
     </q-header>
@@ -103,6 +103,23 @@
 
             <q-item-section>Usuario</q-item-section>
           </q-item>
+          <q-expansion-item expand-separator icon="settings" label="Opciones">
+            <q-card>
+              <q-card-section class="q-ma-none">
+                <div class="column wrap q-pa-none justify-center">
+                  <div class="row">
+                    <q-toggle
+                      v-model="isNightMode"
+                      checked-icon="dark_mode"
+                      size="lg"
+                      :label="isNightMode ? 'Modo Noche: Si' : 'Modo Noche: No'"
+                      unchecked-icon="light_mode"
+                    />
+                  </div>
+                </div>
+              </q-card-section>
+            </q-card>
+          </q-expansion-item>
         </q-list>
       </q-scroll-area>
     </q-drawer>
