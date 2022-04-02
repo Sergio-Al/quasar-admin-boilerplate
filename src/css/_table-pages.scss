@@ -1,0 +1,45 @@
+.container {
+  h4 {
+    margin: 1rem 0;
+    margin-top: 2rem;
+  }
+  .create-button {
+    margin-top: 1rem;
+  }
+  .user-table {
+    width: 100%;
+  }
+  .custom-column {
+    width: 100%;
+  }
+}
+
+.creation-card-simple {
+  min-width: 350px;
+  width: 100%;
+}
+
+.creation-card-big {
+  min-width: 350px;
+  max-width: 650px;
+  width: 100%;
+}
+
+@media screen and (min-width: 1300px) {
+  .container {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .creation-card-big {
+    .row {
+      .col {
+        width: 100%;
+      }
+    }
+  }
+}
