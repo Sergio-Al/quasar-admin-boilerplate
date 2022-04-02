@@ -73,6 +73,21 @@
           </q-item>
 
           <q-item
+            to="/system/books"
+            clickable
+            :active="isMyComponent('libros')"
+            @click="selectComponent('libros')"
+            v-ripple
+            exact
+          >
+            <q-item-section avatar>
+              <q-icon name="book" />
+            </q-item-section>
+
+            <q-item-section>Libros</q-item-section>
+          </q-item>
+
+          <q-item
             to="/system/clients"
             clickable
             :active="isMyComponent('clientes')"

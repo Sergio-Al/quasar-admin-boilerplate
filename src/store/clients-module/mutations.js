@@ -1,11 +1,23 @@
 export default {
-  populateClientsData(state, payload) {
+  createResource(state, payload) {
+    state.clients.push(payload);
+  },
+  ReadResources(state, payload) {
     state.clients = payload;
   },
-  populateClientData(state, payload) {
-    state.selectedClientId = payload.id;
-    state.selectedClientName = payload.name;
-    state.selectedClientNIT = payload.nit;
-    state.selectedClientAddress = payload.address;
+  updateResource(state, payload) {
+    state.clients = state.clients.map((client) =>
+      client.id === payload.id
+        ? {
+            ...client,
+            name: payload.name,
+            email: payload.email,
+            celular: payload.celular,
+          }
+        : client
+    );
+  },
+  deleteResource(state, payload) {
+    state.clients = state.clients.filter((client) => client.id !== payload.id);
   },
 };

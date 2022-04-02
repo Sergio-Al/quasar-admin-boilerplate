@@ -20,6 +20,11 @@ const routes = [
         component: () => import("pages/authors.vue"),
       },
       {
+        path: "books",
+        name: "SystemBooks",
+        component: () => import("pages/Books.vue"),
+      },
+      {
         path: "clients",
         name: "SystemClients",
         component: () => import("pages/Clients.vue"),
