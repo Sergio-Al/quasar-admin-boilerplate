@@ -119,6 +119,22 @@
             <q-item-section>Prestamos</q-item-section>
           </q-item>
 
+          <q-item
+            to="/system/reports"
+            clickable
+            :active="isMyComponent('reportes')"
+            @click="selectComponent('reportes')"
+            active-class="item-active"
+            v-ripple
+            exact
+          >
+            <q-item-section avatar>
+              <q-icon name="summarize" />
+            </q-item-section>
+
+            <q-item-section>Reportes</q-item-section>
+          </q-item>
+
           <q-item-label header>Opciones</q-item-label>
 
           <q-item
