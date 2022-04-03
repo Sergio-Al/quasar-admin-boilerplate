@@ -14,7 +14,7 @@
             color="primary"
             class="create-button"
             icon="bookmarks"
-            label="Registrar Nuevo"
+            label="Registrar Prestamo"
             @click="openRegisterDialog()"
           />
         </div>
@@ -213,11 +213,9 @@ export default {
     // Events in the page
     const openRegisterDialog = () => {
       isRegisterDialogOpen.value = !isRegisterDialogOpen.value;
-      console.log("Register new Book");
     }
 
     const openReturnDialog = (data) => {
-      console.log("opening Return dialog");
       isReturnDialogOpen.value = !isReturnDialogOpen.value;
       loanToReturnData.value = data;
     }
@@ -239,14 +237,12 @@ export default {
     }
 
     const onReset = () => {
-      console.log("resetting");
       libroSelected.value = null;
       clienteSelected.value = null;
       diasPrestamo.value = 12;
     }
 
     const onCancel = () => {
-      console.log("cancelling");
       onReset();
       isRegisterDialogOpen.value = !isRegisterDialogOpen.value;
     }
@@ -267,7 +263,6 @@ export default {
     }
 
     const returnLoan = async (id) => {
-      console.log("returning ", id);
       try {
         await $store.dispatch("loansModule/registerReturn", { id });
         positiveMessage("Devolucion", "Se ha registrado una devolucion");

@@ -137,11 +137,6 @@ export default {
         await $store.dispatch('loansModule/readLoans');
         isLoadingTable.value = false;
         rows.value = generateFormatReport($store.state.loansModule.loans);
-        const myData = rows.value[1].fecha_prestamo;
-        const myDate = moment(myData);
-        console.log(myDate.diff(moment().format(), 'days'));
-        console.log(moment().format("YYYY/MM/DD"));
-
       } catch (e) {
         negativeMessage("Error", "Hubo un error al obtener los datos");
       }
@@ -155,8 +150,6 @@ export default {
       return row;
     });
 
-    // TODO: Clean the data, it's almost finished!
-
     // Events
     const generateReport = (reportSelected) => {
       recoveryReport = generateFormatReport($store.state.loansModule.loans);
@@ -168,7 +161,6 @@ export default {
     }
 
     const generateVencidos = () => {
-      console.log("Generating vencidos");
       reportTitle.value = "Libros Vencidos";
       rows.value = recoveryReport.filter((row) => {
         const daysPassed = moment(row.fecha_prestamo).diff(moment().format(), 'days');
@@ -185,12 +177,7 @@ export default {
     }
 
     const generateByFecha = () => {
-      console.log('Generating by fecha');
       reportTitle.value = "Segmentacion por fecha"
-      const anotherDate = moment().format("YYYY/MM/DD");
-      const myActualDate = moment(anotherDate);
-      console.log(myActualDate.isBetween(filterDate.value.from, filterDate.value.to));
-      console.log(filterDate.value.from, filterDate.value.to);
       rows.value = recoveryReport.filter((row) => {
         if (!row.fecha_prestamo) return;
         const isFechaBetweenDates = moment(row.fecha_prestamo).isBetween(filterDate.value.from, filterDate.value.to);
