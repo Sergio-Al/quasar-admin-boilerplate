@@ -12,7 +12,6 @@
     <div class="my-signup flex shadow-4">
       <img src="../assets/SignUpSide.png" />
       <q-form @submit="onSubmit" class="q-px-lg flex column justify-center">
-        <img src="../assets/groupcisc-logo.png" />
         <div class="q-my-sm">
           <div class="text-h6">Registra tu cuenta</div>
         </div>

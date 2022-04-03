@@ -11,6 +11,16 @@ A loans for books management app
 
 # Installation
 
+## Install Quasar
+I'd recommend to install Quasar CLI
+```
+npm i -g @quasar/cli
+
+#OR
+
+yarn global add @quasar/cli
+```
+
 ## Install the dependencies
 ```bash
 yarn install
