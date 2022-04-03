@@ -36,28 +36,28 @@ See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js
 
 # Screenshots
 - Main Page
-[HomePage](/RemoteInfo/HomePage.png)
+![HomePage](/RemoteInfo/HomePage.png)
 
 - Authors Page
-[AuthorsPage](/RemoteInfo/Authors.png)
+![AuthorsPage](/RemoteInfo/Authors.png)
 
 - Clients Page
-[ClientsPage](/RemoteInfo/Clients.png)
+![ClientsPage](/RemoteInfo/Clients.png)
 
 - Books Page
-[BooksPage](/RemoteInfo/Books.png)
+![BooksPage](/RemoteInfo/Books.png)
 
 - Loans Page
-[LoansPage](/RemoteInfo/Loans.png)
+![LoansPage](/RemoteInfo/Loans.png)
 
 - Reports (Expired Loans) Page
-[ReportsPage](/RemoteInfo/ReportVencidos.png)
+![ReportsPage](/RemoteInfo/ReportVencidos.png)
 
 - Reports (Filter By Date) Page
-[ReportsDatePage](/RemoteInfo/ReportFechas.png)
+![ReportsDatePage](/RemoteInfo/ReportFechas.png)
 
 - Night Mode
-[NightMode](/RemoteInfo/NightMode.png)
+![NightMode](/RemoteInfo/NightMode.png)
 
 - Responsive
-[Responsive](/RemoteInfo/Responsive.png)
+![Responsive](/RemoteInfo/Responsive.png)
