@@ -3,8 +3,8 @@
 A loans for books management app
 
 # Requirements
-- Node v16.13.0 or newer
-- Yarn version 1.22.10 or newer
+- Node `v16.13.0` or newer
+- Yarn version `1.22.10` or newer
 
 # Important!
 - Set up the connection to your backend in `src/boot/axios.js`
