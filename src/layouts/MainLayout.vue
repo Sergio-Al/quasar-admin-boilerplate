@@ -103,6 +103,22 @@
             <q-item-section>clientes</q-item-section>
           </q-item>
 
+          <q-item
+            to="/system/loans"
+            clickable
+            :active="isMyComponent('prestamos')"
+            @click="selectComponent('prestamos')"
+            active-class="item-active"
+            v-ripple
+            exact
+          >
+            <q-item-section avatar>
+              <q-icon name="bookmark" />
+            </q-item-section>
+
+            <q-item-section>Prestamos</q-item-section>
+          </q-item>
+
           <q-item-label header>Opciones</q-item-label>
 
           <q-item

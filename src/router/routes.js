@@ -29,6 +29,11 @@ const routes = [
         name: "SystemClients",
         component: () => import("pages/Clients.vue"),
       },
+      {
+        path: "loans",
+        name: "SystemLoans",
+        component: () => import("pages/Loans.vue"),
+      }
     ],
     // TODO: Delete this later
     // meta: {

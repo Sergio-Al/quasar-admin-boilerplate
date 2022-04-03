@@ -96,4 +96,66 @@ const columsnForBooks = [
   },
 ];
 
-export { columnsForAuthors, columnsForClients, columsnForBooks };
+const columnsForLoans = [
+  {
+    name: "id",
+    required: true,
+    label: "ID",
+    align: "left",
+    field: (row) => row.id,
+    format: (val) => `${val}`,
+    sortable: true,
+  },
+  {
+    name: "titulo_libro",
+    required: true,
+    label: "Nombre Libro",
+    align: "left",
+    field: (row) => row.nombre_libro,
+    format: (val) => `${val}`,
+    sortable: true,
+  },
+  {
+    name: "nombre_cliente",
+    required: true,
+    label: "Nombre Cliente",
+    align: "left",
+    field: (row) => row.nombre_cliente,
+    format: (val) => `${val}`,
+    sortable: true,
+  },
+  {
+    name: "fecha_prestamo",
+    required: true,
+    label: "Fecha de Prestamo",
+    align: "left",
+    field: (row) => row.fecha_prestamo,
+    format: (val) => `${val}`,
+    sortable: true,
+  },
+  {
+    name: "dias_prestamo",
+    required: true,
+    label: "Dias Prestamo",
+    align: "left",
+    field: (row) => row.dias_prestamo,
+    format: (val) => `${val}`,
+    sortable: true,
+  },
+  {
+    name: "estado",
+    required: true,
+    label: "Estado",
+    align: "left",
+    field: (row) => row.estado,
+    format: (val) => `${val}`,
+    sortable: true,
+  },
+];
+
+export {
+  columnsForAuthors,
+  columnsForClients,
+  columsnForBooks,
+  columnsForLoans,
+};
